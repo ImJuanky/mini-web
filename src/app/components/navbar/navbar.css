@@ -1,39 +1,38 @@
-.button-container {
-  display: flex;
-  background-color: rgba(0, 73, 144);
-  width: 250px;
-  height: 40px;
-  align-items: center;
-  justify-content: space-around;
-  border-radius: 10px;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px,
-    rgba(0, 73, 144, 0.5) 5px 10px 15px;
-  transition: all 0.5s;
-}
-.button-container:hover {
-  width: 300px;
-  transition: all 0.5s;
-}
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+} 
 
-.button {
-  outline: 0 !important;
-  border: 0 !important;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background-color: transparent;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #fff;
-  transition: all ease-in-out 0.3s;
-  cursor: pointer;
-}
+/* ahora vamos a editar en navbar */
 
-.button:hover {
-  transform: translateY(-3px);
+.navbar {
+  background-color: rgb(59, 130, 246);   /* Color azul */
+  padding: 1rem 2rem;                    /* Espaciado interno */
+  display: flex;                         /* Coloca elementos en línea */
+  justify-content: space-between;        /* Izquierda  Derecha */
+  align-items: center;                   /* Centrado vertical */
+  color: white;
 }
-
-.icon {
-  font-size: 20px;
+.logo h2 {
+  margin: 0;
+  font-size: 1.5rem;                     /* Tamaño de letra grande */
+}
+.menu {
+  list-style: none;   /* Quita los puntos de la lista */
+  margin: 0;
+  padding: 0;
+  display: flex;      /* Pone los <li> uno al lado del otro */
+}
+.menu li {
+  margin-left: 20px;  /* Espacio entre opciones */
+}
+.menu a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 14px;
+  border-radius: 5px;                     /* Bordes redondos */
+  transition: background-color 0.2s ease; /* Animación suave */
+}
+.menu a:hover {
+  background-color: rgba(255, 255, 255, 0.2); /* Efecto hover */
 }
