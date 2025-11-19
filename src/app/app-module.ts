@@ -6,8 +6,8 @@ import { App } from './app';
 import { Navbar } from './components/navbar/navbar';
 import { PlanList } from './components/plan-list/plan-list';
 import { PlanCard } from './components/plan-card/plan-card';
-import { About } from './about/about';
-import { Contact } from './contact/contact';
+
+
 
 @NgModule({
   declarations: [
@@ -15,16 +15,12 @@ import { Contact } from './contact/contact';
     Navbar,
     PlanList,
     PlanCard,
-    About,
-    Contact
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [
-    provideBrowserGlobalErrorListeners()
-  ],
+  providers: [],
   bootstrap: [App]
 })
-export class AppModule { }
+export class AppModule {}
