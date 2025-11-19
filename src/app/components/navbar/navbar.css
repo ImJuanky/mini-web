@@ -1,0 +1,25 @@
+.navbar {
+  background-color: rgb(211, 92, 245);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+.logo h2 {
+  margin: 0;
+  color: white;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+.menu a:hover {
+  background-color: #34495e;
+}
