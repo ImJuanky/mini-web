@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-plan-card',
@@ -7,5 +7,11 @@ import { Component } from '@angular/core';
   styleUrl: './plan-card.css',
 })
 export class PlanCard {
+  @Input() titulo: string = '';
+  @Input() descripcion: string = '';
+  @Input() lugar: string = '';
 
+  apuntarse() {
+    alert(`Te has apuntado a: ${this.titulo}`);
+  }
 }

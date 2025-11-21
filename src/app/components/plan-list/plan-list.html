@@ -1,1 +1,13 @@
-<p>plan-list works!</p>
+<section class="plan-list">
+  <h1>Mis planes</h1>
+
+  <div class="plan-list__grid">
+    <!-- RECORREMOS EL ARRAY -->
+    <app-plan-card
+      *ngFor="let plan of misPlanes"
+      [titulo]="plan.titulo"
+      [descripcion]="plan.descripcion"
+      [lugar]="plan.lugar"
+    ></app-plan-card>
+  </div>
+</section>
